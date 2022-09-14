@@ -16,5 +16,6 @@ public class GateOpening : MonoBehaviour
             gate2.transform.position -= new Vector3(0.1f, 0);
             x += 0.1f;
         }
+       
     }
 }

@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
                     timer = 0;
                     animator.SetBool("throw", false);
                     // display attack damage
-                    energyScale.GetComponentInChildren<Text>().text = newObjectFire.GetComponent<ParamsFireP>().DAMAGE + "";
+                    energyScale.GetComponentInChildren<Text>().text = newObjectFire.GetComponent<ParamsFirePlayer>().DAMAGE + "";
                 }
             }
         }

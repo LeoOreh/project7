@@ -26,7 +26,7 @@ public class HealthPlus : MonoBehaviour
             // this logic will no longer be executed
             once = true;
             // directly changing the value
-            Player.GetComponent<LifeP>().HealthPlus(Value);
+            Player.GetComponent<LifePlayer>().HealthPlus(Value);
         }
         else
         {

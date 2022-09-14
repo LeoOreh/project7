@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 33bc3a7752b2576449cf46cb999d8985, type: 2}
+  - {fileID: 2100000, guid: b8a0e7535ad44f946bb7f1d5bc0e8545, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 561577972456643381}
   m_Layer: 0
   m_Name: Entry
-  m_TagString: Untagged
+  m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,6 +170,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemies: []
+  once: 0
+  blockEnemies: {fileID: 0}
 --- !u!1 &5847780834454434242
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,7 +234,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b6d30d38dd3abf441ba004c203ee01f9, type: 2}
+  - {fileID: 2100000, guid: b8a0e7535ad44f946bb7f1d5bc0e8545, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -438,7 +440,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b6d30d38dd3abf441ba004c203ee01f9, type: 2}
+  - {fileID: 2100000, guid: b8a0e7535ad44f946bb7f1d5bc0e8545, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -546,7 +548,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 33bc3a7752b2576449cf46cb999d8985, type: 2}
+  - {fileID: 2100000, guid: b8a0e7535ad44f946bb7f1d5bc0e8545, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -36,10 +36,10 @@ public class Bonus : MonoBehaviour
             if (healthBomus)
             {
                 // add health
-                player.GetComponent<LifeP>().health += bonusValue;
+                player.GetComponent<LifePlayer>().health += bonusValue;
                 // but not more than the maximum
-                if (player.GetComponent<LifeP>().health > player.GetComponent<LifeP>().healthMax)
-                    player.GetComponent<LifeP>().health = player.GetComponent<LifeP>().healthMax;
+                if (player.GetComponent<LifePlayer>().health > player.GetComponent<LifePlayer>().healthMax)
+                    player.GetComponent<LifePlayer>().health = player.GetComponent<LifePlayer>().healthMax;
             }
 
             if (speedDSDownBonus)

@@ -35,7 +35,7 @@ public class DeadlyShadow : MonoBehaviour
                 other.tag = "EnemyEnd";
 
                 //disable the reward when self-destructing
-                other.GetComponent<LifeE>().createReward = null;
+                other.GetComponent<LifeEnemy>().createReward = null;
             }
         }
 
@@ -62,17 +62,17 @@ public class DeadlyShadow : MonoBehaviour
         if (Damage && other.tag == "Player")
         {
             // damage 1% of max health
-            damage = Mathf.Round(other.GetComponent<LifeP>().healthMax / 100);
+            damage = Mathf.Round(other.GetComponent<LifePlayer>().healthMax / 100);
 
             // but not less than 1
             if (damage < 1)
                 damage = 1;
 
             // change the player's health
-            other.GetComponent<LifeP>().health -= damage;
+            other.GetComponent<LifePlayer>().health -= damage;
 
             // end the game if there is no health
-            other.GetComponent<LifeP>().HealthNull();
+            other.GetComponent<LifePlayer>().HealthNull();
         }
     }
 }

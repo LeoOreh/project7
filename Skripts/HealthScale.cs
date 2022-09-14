@@ -25,7 +25,7 @@ public class HealthScale : MonoBehaviour
     {
         aimE = GameObject.FindGameObjectWithTag("EnemyAim");
         if (aimE != null)
-            indexHealth = aimE.GetComponent<LifeE>().indexHealth;
+            indexHealth = aimE.GetComponent<LifeEnemy>().indexHealth;
         textColor = new Color(0, 0, 0, 0.065f);
     }
     void FixedUpdate()
@@ -42,10 +42,10 @@ public class HealthScale : MonoBehaviour
         if (aimE != null)
         {
             // take the percentage of the health bar
-            indexHealth = aimE.GetComponent<LifeE>().indexHealth;
+            indexHealth = aimE.GetComponent<LifeEnemy>().indexHealth;
 
             // and a health number to display
-            Health = aimE.GetComponent<LifeE>().HEALTH;
+            Health = aimE.GetComponent<LifeEnemy>().HEALTH;
 
             // smooth scale change
             healthScaleE.GetComponent<Image>().fillAmount = Mathf.SmoothDamp(healthScaleE.GetComponent<Image>().fillAmount, indexHealth, ref yVelocity, 0.5f);

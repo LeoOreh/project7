@@ -4885,9 +4885,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ATACK: 1
   timeAtack: 1.2
-  EveryTimeSmooth: 1
-  _smooth: 10
-  randomMOVE: 0
+  lookAtPlayer: 1
+  smoothTurn: 10
   firePrefab: {fileID: 3966243356628681778, guid: f16860f40d0c4644d8ba1c9ecf35cfa8, type: 3}
   timeForAnimThrow: 0.2
 --- !u!95 &815599620
@@ -4927,7 +4926,9 @@ MonoBehaviour:
   PS: {fileID: 1876213623}
   body: {fileID: 256493946242097660}
   createReward: {fileID: 6059710199343963229, guid: d498cd65e95d3d64692c8aeba90b0202, type: 3}
-  rewards: []
+  rewards: {fileID: 0}
+  timerReward: 0
+  ValueReward: 5
 --- !u!1001 &7993023852674703195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4994,7 +4995,7 @@ PrefabInstance:
     - target: {fileID: 6148737315974723067, guid: e98f43f37888c1242a26763d6625621d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 92dcc6fc8c4bcb14a9eeb0275be8fdc4, type: 2}
+      objectReference: {fileID: 2100000, guid: 85046bde6ea139745ae10dd431b63213, type: 2}
     m_RemovedComponents:
     - {fileID: 5866666021909216657, guid: e98f43f37888c1242a26763d6625621d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98f43f37888c1242a26763d6625621d, type: 3}
