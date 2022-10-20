@@ -18,4 +18,13 @@ public class Coins : MonoBehaviour
             coinsText.GetComponent<Text>().text = "" + coins;
         }
     }
-}
+
+    public void CoinsPlus(float value)
+    {
+        coins += (int) value;
+        print("+ " + value + " coins.... = " + coins);
+
+        // display
+        coinsText.GetComponent<Text>().text = "" + coins;
+    }
+ }

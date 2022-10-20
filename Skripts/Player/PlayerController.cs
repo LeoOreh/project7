@@ -81,6 +81,9 @@ public class PlayerController : MonoBehaviour
                     GameObject newObjectFire = Instantiate(prefabAtackObj);
                     newObjectFire.transform.position = gameObject.transform.position;
 
+                    // Bonus attacks from the start
+                    GetComponent<BonusFire>().AdditionFire();
+
                     timer = 0;
                     animator.SetBool("throw", false);
                     // display attack damage

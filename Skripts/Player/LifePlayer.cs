@@ -96,7 +96,8 @@ public class LifePlayer : MonoBehaviour
     // button method. exit to the main menu of levels
     public void ButtonExit()
     {
-        SceneManager.LoadScene("level");
+        Time.timeScale = 1;
+        SceneManager.LoadScene(2);
     }
 
     // button method. level restart

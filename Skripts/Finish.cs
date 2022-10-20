@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Finish : MonoBehaviour
 {
@@ -12,6 +13,6 @@ public class Finish : MonoBehaviour
 
     public void ButtonCloseWindowFinish()
     {
-        finish.SetActive(false);
+        SceneManager.LoadScene(2);
     }
 }

@@ -1,13 +1,24 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 // Testing save
 
 public class SavePrefs : MonoBehaviour
 {
     public float coin_ToSave;
-    float coin_load;
+    public float coin_load;
+    public bool displayCoins = false;
 
     public GameObject player;
+
+    private void Start()
+    {
+        if (displayCoins)
+        {
+            LoadGame();
+            GetComponent<Text>().text = "" + coin_load;
+        }
+    }
 
     public void ProcessSaved()
     {

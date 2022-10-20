@@ -10,7 +10,7 @@ public class ParamsFirePlayer : MonoBehaviour
     public float lifetime = 3;                  // object lifetime
     float timer = 0;
     public float actualAfterTrigger = 0.2f;     // how long will be relevant after touching. this is to give time to finish effect PS
-    public bool endPS;                          // whether to stop the PS effect. Always if there is
+    public bool endForBonusPS;                          // whether to stop the PS effect. Always if there is.   DONT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     void Start()
     {
@@ -38,16 +38,18 @@ public class ParamsFirePlayer : MonoBehaviour
     {
         if (   other.tag != "Player" 
             && other.tag != "FireE"
+            && other.tag != "FireP"
             && other.tag != "Reward"
             && other.tag != "Gate"
             && other.tag != "Coin")
            {
-            timer = lifetime - actualAfterTrigger;
-
-            if (endPS)
+            
+            if (endForBonusPS)
                 // stop PS animation
                 GetComponentInChildren<ParticleSystem>().Stop(true);
-           }
+            else
+                timer = lifetime - actualAfterTrigger;
+        }
 
     }
 }
